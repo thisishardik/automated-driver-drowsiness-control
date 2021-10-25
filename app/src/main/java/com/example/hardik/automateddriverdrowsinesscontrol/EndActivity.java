@@ -14,22 +14,23 @@ import java.util.Date;
 
 public class EndActivity extends AppCompatActivity {
     Button proceed;
-    TextView a,b,c;
-    private String key ="facetrackeractivity";
+    TextView a, b, c;
+    private String key = "facetrackeractivity";
     private String key_3 = "hello";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_end);
-        proceed = (Button)findViewById(R.id.button2);
-        a = (TextView)findViewById(R.id.textView10);
-        b = (TextView)findViewById(R.id.textView11);
-        c = (TextView)findViewById(R.id.textView9);
+        proceed = (Button) findViewById(R.id.button2);
+        a = (TextView) findViewById(R.id.textView10);
+        b = (TextView) findViewById(R.id.textView11);
+        c = (TextView) findViewById(R.id.textView9);
         proceed.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
-                Intent next = new Intent(EndActivity.this,MainActivity.class);
-                next.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
+                Intent next = new Intent(EndActivity.this, MainActivity.class);
+                next.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
                 startActivity(next);
                 EndActivity.this.finish();
                 return false;

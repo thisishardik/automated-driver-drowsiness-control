@@ -14,7 +14,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Start the monitoring process:"
+        android:text="Start the monitoring process"
         android:id="@+id/textView2"
         android:layout_centerVertical="true"
         android:layout_alignParentLeft="true"
@@ -69,15 +69,15 @@
         android:layout_alignParentStart="true" />
 
     <TextView
+        android:id="@+id/textView15"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="@string/alarm_will_invoke_after"
-        android:id="@+id/textView15"
         android:layout_below="@+id/textView19"
-        android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="21dp" />
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="21dp"
+        android:text="@string/alarm_will_invoke_after"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
 
     <TextView
         android:id="@+id/textView21"
@@ -95,17 +95,16 @@
         android:id="@+id/magic_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:magic_button_size="90dp"
-        app:button_icon="@drawable/l"
-
-        app:button_icon_width="70dp"
-        app:button_icon_height="70dp"
-        app:hide_text="Start"
-        app:hide_text_size="15dp"
-        app:hide_text_color="@android:color/black"
         android:layout_below="@+id/textView2"
-        android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="40dp"></br.com.bloder.magic.view.MagicButton>
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="40dp"
+        app:button_icon="@drawable/logo_main"
+        app:button_icon_height="45dp"
+        app:button_icon_width="56dp"
+        app:hide_text="Start"
+        app:hide_text_color="@android:color/black"
+        app:hide_text_size="16sp"
+        app:magic_button_size="80dp"></br.com.bloder.magic.view.MagicButton>
 
 </RelativeLayout>

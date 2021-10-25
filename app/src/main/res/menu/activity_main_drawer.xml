@@ -12,14 +12,4 @@
             android:icon="@drawable/ic_action_help" />
 
     </group>
-
-    <item android:title="Communicate">
-        <menu>
-            <item
-                android:id="@+id/nav_send"
-                android:icon="@drawable/ic_menu_send"
-                android:title="Contact Us" />
-        </menu>
-    </item>
-
 </menu>

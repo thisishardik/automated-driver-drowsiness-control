@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Automated Driver Drowsiness Control</string>
+    <string name="app_name">SafeSteerIO</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -11,7 +11,7 @@
     <string name="action_settings">Settings</string>
     <string name="end">END</string>
     <string name="status">STATUS:</string>
-    <string name="alarm_will_invoke_after">Alarm will invoke after:</string>
+    <string name="alarm_will_invoke_after">Alert will invoke after:</string>
     <string name="high">High</string>
     <string name="medium_recommended">Medium (Recommended)</string>
     <string name="low">Low</string>

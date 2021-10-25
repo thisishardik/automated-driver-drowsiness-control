@@ -27,10 +27,9 @@ public class MainActivity extends FragmentActivity implements NavigationView.OnN
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        toolbar.setTitle("Automated Driver Drowsiness Control");
+        toolbar.setTitle("SafeSteerIO");
         frame = (FrameLayout) findViewById(R.id.frame);
         getSupportFragmentManager().beginTransaction().replace(R.id.frame, new MonitorMenu()).commit();
-        Toast.makeText(getApplicationContext(), "Swipe left for menu", Toast.LENGTH_SHORT).show();
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
@@ -41,7 +40,7 @@ public class MainActivity extends FragmentActivity implements NavigationView.OnN
         navigationView.setNavigationItemSelectedListener(this);
         boolean isFirstTime = MyPreferences.isFirst(MainActivity.this);
         if (isFirstTime == true) {
-            Intent help = new Intent(MainActivity.this, HelpActivity.class);
+            Intent help = new Intent(MainActivity.this, MainActivity.class);
             startActivity(help);
         }
     }

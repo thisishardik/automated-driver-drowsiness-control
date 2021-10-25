@@ -3,13 +3,23 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Android/Android Projects/AutomatedDriverDrowsinessControl/app/src/main/res/drawable-v24/background_shape.xml" value="0.27447916666666666" />
+        <entry key="..\:/Android/Android Projects/AutomatedDriverDrowsinessControl/app/src/main/res/drawable-v24/btnblue.xml" value="0.27447916666666666" />
+        <entry key="..\:/Android/Android Projects/AutomatedDriverDrowsinessControl/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.27447916666666666" />
+        <entry key="..\:/Android/Android Projects/AutomatedDriverDrowsinessControl/app/src/main/res/drawable/background_shape.xml" value="0.27447916666666666" />
+        <entry key="..\:/Android/Android Projects/AutomatedDriverDrowsinessControl/app/src/main/res/drawable/background_shape_camera_preview.xml" value="0.27447916666666666" />
+        <entry key="..\:/Android/Android Projects/AutomatedDriverDrowsinessControl/app/src/main/res/drawable/btnblue.xml" value="0.27447916666666666" />
+        <entry key="..\:/Android/Android Projects/AutomatedDriverDrowsinessControl/app/src/main/res/drawable/btngreen.xml" value="0.27447916666666666" />
+        <entry key="..\:/Android/Android Projects/AutomatedDriverDrowsinessControl/app/src/main/res/drawable/btnpurple.xml" value="0.27447916666666666" />
+        <entry key="..\:/Android/Android Projects/AutomatedDriverDrowsinessControl/app/src/main/res/drawable/btnred.xml" value="0.27447916666666666" />
         <entry key="..\:/Android/Android Projects/AutomatedDriverDrowsinessControl/app/src/main/res/drawable/button.xml" value="0.20989583333333334" />
         <entry key="..\:/Android/Android Projects/AutomatedDriverDrowsinessControl/app/src/main/res/drawable/ic_launcher_background.xml" value="0.20925925925925926" />
         <entry key="..\:/Android/Android Projects/AutomatedDriverDrowsinessControl/app/src/main/res/drawable/ic_menu_camera.xml" value="0.20989583333333334" />
+        <entry key="..\:/Android/Android Projects/AutomatedDriverDrowsinessControl/app/src/main/res/drawable/ic_menu_share.xml" value="0.15625" />
         <entry key="..\:/Android/Android Projects/AutomatedDriverDrowsinessControl/app/src/main/res/drawable/ic_menu_slideshow.xml" value="0.1" />
         <entry key="..\:/Android/Android Projects/AutomatedDriverDrowsinessControl/app/src/main/res/drawable/side_nav_bar.xml" value="0.1" />
         <entry key="..\:/Android/Android Projects/AutomatedDriverDrowsinessControl/app/src/main/res/layout/activity_contact_us.xml" value="0.12" />
-        <entry key="..\:/Android/Android Projects/AutomatedDriverDrowsinessControl/app/src/main/res/layout/activity_end.xml" value="0.1" />
+        <entry key="..\:/Android/Android Projects/AutomatedDriverDrowsinessControl/app/src/main/res/layout/activity_end.xml" value="0.2" />
         <entry key="..\:/Android/Android Projects/AutomatedDriverDrowsinessControl/app/src/main/res/layout/activity_face_tracker.xml" value="0.2" />
         <entry key="..\:/Android/Android Projects/AutomatedDriverDrowsinessControl/app/src/main/res/layout/activity_help.xml" value="0.1" />
         <entry key="..\:/Android/Android Projects/AutomatedDriverDrowsinessControl/app/src/main/res/layout/activity_main.xml" value="0.20516304347826086" />
@@ -21,7 +31,7 @@
         <entry key="..\:/Android/Android Projects/AutomatedDriverDrowsinessControl/app/src/main/res/layout/fragment_page_1.xml" value="0.1" />
         <entry key="..\:/Android/Android Projects/AutomatedDriverDrowsinessControl/app/src/main/res/layout/fragment_page_2.xml" value="0.1" />
         <entry key="..\:/Android/Android Projects/AutomatedDriverDrowsinessControl/app/src/main/res/layout/fragment_page_3.xml" value="0.1" />
-        <entry key="..\:/Android/Android Projects/AutomatedDriverDrowsinessControl/app/src/main/res/layout/nav_header_main.xml" value="0.1" />
+        <entry key="..\:/Android/Android Projects/AutomatedDriverDrowsinessControl/app/src/main/res/layout/nav_header_main.xml" value="0.2" />
         <entry key="..\:/Android/Android Projects/AutomatedDriverDrowsinessControl/app/src/main/res/menu/activity_main_drawer.xml" value="0.19375" />
         <entry key="..\:/Android/Android Projects/AutomatedDriverDrowsinessControl/app/src/main/res/menu/main.xml" value="0.19375" />
         <entry key="..\:/Android/Android Projects/AutomatedDriverDrowsinessControl/app/src/main/res/menu/menu_help.xml" value="0.19375" />

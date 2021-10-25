@@ -1,5 +1,6 @@
 package com.example.hardik.automateddriverdrowsinesscontrol.camera;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.res.Configuration;
 import android.util.AttributeSet;

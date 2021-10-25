@@ -1,13 +1,20 @@
 package com.example.hardik.automateddriverdrowsinesscontrol;
 
+import android.content.ContentResolver;
+import android.content.Context;
 import android.content.Intent;
+import android.media.AudioManager;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
+import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 
 import java.text.DateFormat;
@@ -21,20 +28,33 @@ public class MonitorMenu extends Fragment {
     TextView ttv;
     private String key_2 = "Hardik's project";
     private String key_4 = "sensitivity";
+    // brightness manipulation
+    private int brightness;
+    private ContentResolver cResolver;
+    private Window window;
+    AudioManager manageDeviceAudio;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         final View root;
+
+        //  Write settings operations
+        cResolver = getActivity().getContentResolver();
+        window = getActivity().getWindow();
+        manageDeviceAudio = (AudioManager) getActivity().getSystemService(Context.AUDIO_SERVICE);
+        WindowManager.LayoutParams layoutParams = window.getAttributes();
+        manageDeviceAudio.setStreamVolume(AudioManager.STREAM_MUSIC, 100, 0);
+
         root = inflater.inflate(R.layout.activity_monitor_menu, container, false);
         b = (MagicButton) root.findViewById(R.id.magic_button);
         s = (SeekBar) root.findViewById(R.id.seekBar2);
         ttv = (TextView) root.findViewById(R.id.textView21);
         if (s.getProgress() == 0) {
-            ttv.setText("0.5 second");
+            ttv.setText("0.5 seconds");
         } else if (s.getProgress() == 1) {
-            ttv.setText("0.75 second");
+            ttv.setText("0.75 seconds");
         } else if (s.getProgress() == 2) {
-            ttv.setText("1 seconds");
+            ttv.setText("1 second");
         } else if (s.getProgress() == 3) {
             ttv.setText("1.25 seconds");
         } else if (s.getProgress() == 4) {
@@ -63,11 +83,11 @@ public class MonitorMenu extends Fragment {
             public void onProgressChanged(SeekBar seekBar, int progress,
                                           boolean fromUser) {
                 if (s.getProgress() == 0) {
-                    ttv.setText("0.5 second");
+                    ttv.setText("0.5 seconds");
                 } else if (s.getProgress() == 1) {
-                    ttv.setText("0.75 second");
+                    ttv.setText("0.75 seconds");
                 } else if (s.getProgress() == 2) {
-                    ttv.setText("1 seconds");
+                    ttv.setText("1 second");
                 } else if (s.getProgress() == 3) {
                     ttv.setText("1.25 seconds");
                 } else if (s.getProgress() == 4) {

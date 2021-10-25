@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/topLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -7,12 +8,41 @@
     android:keepScreenOn="true"
     android:orientation="vertical">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/timeFaceTracker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="9dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/dateFaceTracker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="9dp"
+            android:layout_weight="0"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textAlignment="textEnd"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+    </LinearLayout>
+
     <com.example.hardik.automateddriverdrowsinesscontrol.camera.CameraSourcePreview
         android:id="@+id/preview"
-        android:layout_width="300dp"
-        android:layout_height="400dp"
+        android:layout_width="340dp"
+        android:layout_height="450dp"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="10dp">
+        android:layout_marginTop="15dp">
 
         <com.example.hardik.automateddriverdrowsinesscontrol.camera.GraphicOverlay
             android:id="@+id/faceOverlay"
@@ -21,56 +51,71 @@
 
     </com.example.hardik.automateddriverdrowsinesscontrol.camera.CameraSourcePreview>
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_gravity="bottom">
+<!--    <TextView-->
+<!--        android:id="@+id/userNameView"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:fontFamily="sans-serif-smallcaps"-->
+<!--        android:text="Hardik Srivastava"-->
+<!--        android:textAlignment="center"-->
+<!--        android:textColor="#000000"-->
+<!--        android:textSize="16sp" />-->
 
-        <TableRow
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:text="Status"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#000000"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentLeft="false"
-            android:layout_alignParentTop="false"
-            android:layout_alignParentBottom="true"
-            android:layout_weight="0"
-            android:background="#00BCD4"
-            android:gravity="center|center_horizontal"
-            android:weightSum="2">
+            android:layout_marginRight="12dp"
+            android:textAlignment="textEnd"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+    </LinearLayout>
 
-            <Button
-                android:id="@+id/button"
-                style="?android:attr/buttonStyleSmall"
-                android:layout_width="wrap_content"
-                android:layout_height="48dp"
-                android:layout_marginRight="5dp"
-                android:background="#E0E0E0"
-                android:text="@string/end" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom|center_horizontal"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:paddingBottom="20dp">
 
-            <ToggleButton
-                android:id="@+id/toggleButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="New ToggleButton"
-                android:textSize="10dp" />
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/btnred"
+            android:text="@string/end"
+            android:textColor="@color/white"
+            tools:ignore="TextContrastCheck" />
 
-            <TextView
-                android:id="@+id/textView3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="5dp"
-                android:text="Status: "
-                android:textAppearance="?android:attr/textAppearanceSmall"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/textView4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceSmall" />
-
-        </TableRow>
-    </RelativeLayout>
+        <ToggleButton
+            android:id="@+id/toggleButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btnblue"
+            android:text="New ToggleButton"
+            android:textColor="@color/white"
+            android:textSize="10dp" />
+    </LinearLayout>
 
 </LinearLayout>
 
