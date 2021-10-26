@@ -40,7 +40,7 @@ public class MainActivity extends FragmentActivity implements NavigationView.OnN
         navigationView.setNavigationItemSelectedListener(this);
         boolean isFirstTime = MyPreferences.isFirst(MainActivity.this);
         if (isFirstTime == true) {
-            Intent help = new Intent(MainActivity.this, MainActivity.class);
+            Intent help = new Intent(MainActivity.this, HelpActivity.class);
             startActivity(help);
         }
     }

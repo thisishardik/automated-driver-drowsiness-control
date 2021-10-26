@@ -12,7 +12,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/imageView"
-        android:src="@drawable/capture0"
+        android:src="@drawable/banner_1"
+        android:scaleType="centerCrop"
         android:layout_gravity="left|top" />
 
     <TextView
@@ -21,6 +22,9 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="1/4"
         android:id="@+id/textView"
+        android:textColor="@color/white"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
         android:layout_gravity="right|bottom" />
 
 </FrameLayout>
